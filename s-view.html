@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Home-M-D</title>
+      <link href="s-view.css"  rel="stylesheet" type="text/css" />
+   </head>
+   <body>
+      <!---HEADER--->
+      <header>
+         <div>
+            <h1>Melora's diary</h1>
+         </div>
+         <div class="nav-bar">
+            <div class="login-link">
+                 <button>log in</button>
+            </div>
+               <div class="new-user-link">
+                 <button >sign up</button>
+               </div>
+               <div class="home">
+                  <button >home</button>
+                </div>
+            </div>
+         </div>
+      </header>
+      <!---MAIN--->
+      <main>
+         <div class="introduction">
+            
+         </div>
+
+         <div class="sample-sheet">
+           <h4>sample-sheet</h4>
+           <!--character intro name -->
+            <form class="character-sheet">
+
+               <div class="player-input">
+                  <section class="character-name">
+                     <label for="character-name">Character Name</label> 
+                       <input disabled value="Thumb-bolt" id="character-name" placeholder="Kivik Milawolfski" />
+                  </section>
+                  <section class="misc">
+                     <ul>
+                        <li>
+                           <label for="classlevel">Class & Level</label> 
+                            <input disabled value="Inqusitive Rouge lvl 4" id="classlevel" placeholder="Paladin 2" />
+                        </li>
+                        <li>
+                           <label for="background">Background</label>
+                            <input disabled value="Outlander" id="background" placeholder="Acolyte" />
+                        </li>
+                        <li>
+                           <label for="playername">Player Name</label>
+                            <input disabled value="B-Right" id="playername" placeholder="Player McPlayerface">
+                        </li>
+                        <li>
+                           <label for="race">Race</label>
+                            <input disabled value="Kenku" id="race" placeholder="Half-elf" />
+                        </li>
+                        <li>
+                           <label for="alignment">Alignment</label>
+                            <input disabled value="CN" id="alignment" placeholder="Lawful Good" />
+                        </li>
+                        <li>
+                           <label for="experiencepoints">Experience Points</label>
+                            <input disabled value="2700" id="experiencepoints" placeholder="3240" />
+                        </li>
+                     </ul>
+                  </section>
+               </div>
+               <!-- column 1 Main Skill scores, passive pro and other skills  -->
+                <div class="column-wrap">
+                  <section class="column-1">
+                     <section class="attributes">
+                       <div class="scores">
+                        <h4> skill attributes and modifiers</h4>
+                              <div class='ab-score'>
+                                 <div class="score">
+                                    <label for="Strength-score">Strength</label>
+                                    <input disabled value="14" id="Strength-score" placeholder="10" />
+                                 </div>
+                                 <div class="modifier">
+                                   <label for="Strength-mod">Str Mod</label>
+                                    <input disabled value="+2" id="Strength-mod" placeholder="+0" />
+                                 </div>
+                              </div>
+                              <div class='ab-score'>
+                                 <div class="score">
+                                    <label for="Dexterity-score">Dexterity</label>
+                                    <input disabled value="20" id="Dexterity-score" placeholder="10" />
+                                 </div>
+                                 <div class="modifier">
+                                  <label for="Dexterity-mod">Dex Mod</label>
+                                    <input disabled value="+5" id="Dexterity-mod" placeholder="+0" />
+                                 </div>
+                              </div>
+                              <div class='ab-score'>
+                                 <div class="score">
+                                    <label for="Constitution-score">Constitution</label>
+                                    <input disabled value="13" id="Constitution-score" placeholder="10" />
+                                 </div>
+                                 <div class="modifier">
+                                  <label for="Constitution-mod">Con Mod</label>
+                                    <input disabled value="+1" id="Constitution-mod" placeholder="+0" />
+                                 </div>
+                              </div class='ab-score'>
+                              <div class='ab-score'>
+                                 <div class="score">
+                                    <label for="Wisdom-score">Wisdom</label>
+                                    <input disabled value="17" id="Wisdom-score" placeholder="10" />
+                                 </div>
+                                 <div class="modifier">
+                                  <label for="Wisdom-mod">Wis Mod</label>
+                                    <input disabled value="+3" id="Wisdom-mod" placeholder="+0" />
+                                 </div>
+                              </div>
+                              <div class='ab-score'>
+                                 <div class="score">
+                                    <label for="Intelligence-score">Intelligence</label>
+                                    <input disabled value="12" id="Intelligence-score" placeholder="10" />
+                                 </div>
+                                 <div class="modifier">
+                                  <label for="Intelligence-mod">Int Mod</label>
+                                    <input disabled value="+1" id="Intelligence-mod" placeholder="+0" />
+                                 </div>
+                              </div>
+                              <div class='ab-score'>
+                                 <div class="score">
+                                    <label for="Charisma-score">Charisma</label>
+                                    <input disabled value="16" id="Charisma-score" placeholder="10" />
+                                 </div>
+                                 <div class="modifier">
+                                  <label for="Charisma-mod">Cha Mod</label>
+                                    <input disabled value="+3" id="Charisma-mod" placeholder="+0" />
+                                  </div>
+                                </div>
+                              </div>
+                              
+                              <!--inspiration & proficiency-->
+                              <div class="attr-applications">
+                                <div class="inspiration box">
+                                  <label for="inspiration">Inspiration</label>
+                                  <input disabled value="" id="inspiration" placeholder="D6" />
+                                </div>
+                                <div class="proficiency-bonus box">
+                                  <label for="proficiency-bonus">Proficiency Bonus</label>
+                                  <input disabled value="+2" id="proficiency-bonus" placeholder="+2" />
+                                </div>
+                                <!--saving throws-->
+                                <div class="saving-throws list-section box">
+                                    <h5>Saving Throws</h5>
+                              <ul>
+                                 <li>
+                                    <label for="Strength-save">Strength</label>
+                                      <input disabled value="2" id="Strength-save" placeholder="+0" type="text" />
+                                       <input disabled value="" class="proficient" id="Strength-save" type="checkbox" />
+                                 </li>
+                                 <li>
+                                    <label for="Dexterity-save">Dexterity</label>
+                                     <input disabled value="7" id="Dexterity-save" placeholder="+0" type="text" />
+                                       <input disabled checked value="" class="proficient" id="Dexterity-save" type="checkbox" />
+                                 </li>
+                                 <li>
+                                    <label for="Constitution-save">Constitution</label>
+                                      <input disabled value="1" id="Constitution-save" placeholder="+0" type="text" />
+                                       <input disabled value="" class="proficient" id="Constitution-save" type="checkbox" />
+                                 </li>
+                                 <li>
+                                    <label for="Wisdom-save">Wisdom</label>
+                                      <input disabled value="3" id="Wisdom-save" placeholder="+0" type="text" />
+                                        <input disabled value="" class="proficient" id="Wisdom-save" type="checkbox" />
+                                 </li>
+                                 <li>
+                                   <label for="Intelligence-save">Intelligence</label>
+                                   <input disabled value="3" id="Intelligence-save" placeholder="+0" type="text" />
+                                   <input disabled value="" checked class="proficient" id="Intelligence-save" type="checkbox" />
+                                  </li>
+                                  <li>
+                                    <label for="Charisma-save">Charisma</label>
+                                    <input disabled value="3" id="Charisma-save" placeholder="+0" type="text" />
+                                    <input disabled value="" class="proficient" id="Charisma-save" type="checkbox" />
+                                  </li>
+                                </ul>
+                              </div>
+                              <!-- Skills -->
+                              <div class="skills list-section box">
+                                <h5>Skills</h5>
+                                 <ul>
+                                    <li>
+                                       <label for="Acrobatics">Acrobatics <span class="skill">(Dex)</span></label>
+                                         <input disabled value="7"  id="Acrobatics" placeholder="+0" type="text"/>
+                                           <input disabled value="" checked class="proficient" id="Acrobatics" type="checkbox" />
+                                    </li>
+                                    <li>
+                                       <label for="Animal-Handling">Animal Handling <span class="skill">(Wis)</span></label>
+                                         <input disabled value="3" id="Animal-Handling" placeholder="+0" type="text" />
+                                           <input disabled value="" class="proficient" id="Animal-Handling" type="checkbox" />
+                                    </li>
+                                    <li>
+                                       <label for="Arcana">Arcana <span class="skill">(Int)</span></label>
+                                         <input disabled value="1" id="Arcana" placeholder="+0" type="text" />
+                                           <input disabled value="" class="proficient" id="Arcana" type="checkbox" />
+                                    </li>
+                                    <li>
+                                       <label for="Athletics">Athletics <span class="skill">(Str)</span></label>
+                                         <input disabled value="4"  id="Athletics" placeholder="+0" type="text" /> 
+                                          <input disabled value="" checked class="proficient" id="Athletics" type="checkbox" />
+                                    </li>
+                                    <li>
+                                       <label for="Deception">Deception <span class="skill">(Cha)</span></label>
+                                         <input disabled value="3" id="Deception" placeholder="+0" type="text" /> 
+                                          <input disabled value="" class="proficient" id="Deception" type="checkbox" />
+                                    </li>
+                                    <li>
+                                       <label for="History">History <span class="skill">(Int)</span></label>
+                                         <input disabled value="1" id="History" placeholder="+0" type="text" /> 
+                                           <input disabled value="" class="proficient" id="History" type="checkbox" />
+                                    </li>
+                                    <li>
+                                       <label for="Insight">Insight <span class="skill">(Wis)</span></label>
+                                         <input disabled value="7"  id="Insight" placeholder="+0" type="text" /> 
+                                          <input disabled value=""  checked class="proficient" id="Insight" type="checkbox" />
+                                    </li>
+                                    <li>
+                                       <label for="Intimidation">Intimidation <span class="skill">(Cha)</span></label>
+                                         <input disabled value="3" id="Intimidation" placeholder="+0" type="text" />
+                                           <input disabled value="" class="proficient" id="Intimidation" type="checkbox" />
+                                    </li>
+                                    <li>
+                                       <label for="Investigation">Investigation <span class="skill">(Int)</span></label> 
+                                         <input disabled value="3" id="Investigation" placeholder="+0" type="text" />  
+                                           <input disabled value="" class="proficient" id="Investigation" type="checkbox" />
+                                    </li>
+                                    <li>
+                                       <label for="Medicine">Medicine <span class="skill">(Wis)</span></label> 
+                                         <input disabled value="3" id="Medicine" placeholder="+0" type="text" /> 
+                                           <input disabled value="" class="proficient" id="Medicine" type="checkbox" />
+                                    </li>
+                                    <li>
+                                       <label for="Nature">Nature <span class="skill">(Int)</span></label> 
+                                         <input disabled value="1" id="Nature" placeholder="+0" type="text" /> 
+                                           <input disabled value="" class="proficient" id="Nature" type="checkbox" />
+                                    </li>
+                                    <li>
+                                       <label for="Perception">Perception <span class="skill">(Wis)</span></label> 
+                                        <input disabled value="7"  id="Perception" placeholder="+0" type="text" /> 
+                                           <input disabled value=" checked" class="proficient" id="Perception" type="checkbox" />
+                                    </li>
+                                    <li>
+                                       <label for="Performance">Performance <span class="skill">(Cha)</span></label> 
+                                         <input disabled value="3" id="Performance" placeholder="+0" type="text" />  
+                                           <input disabled value="" class="proficient" id="Performance" type="checkbox" />
+                                    </li>
+                                    <li>
+                                       <label for="Persuasion">Persuasion <span class="skill">(Cha)</span></label> 
+                                         <input disabled value="5"  id="Persuasion" placeholder="+0" type="text" /> 
+                                           <input disabled value="" checked class="proficient" id="Persuasion" type="checkbox" />
+                                    </li>
+                                    <li>
+                                       <label for="Religion">Religion <span class="skill">(Int)</span></label> 
+                                         <input disabled value="1" id="Religion" placeholder="+0" type="text" /> 
+                                           <input disabled value="" class="proficient" id="Religion" type="checkbox" />
+                                    </li>
+                                    <li>
+                                       <label for="Sleight-of-Hand">Sleight of Hand <span class="skill">(Dex)</span></label> 
+                                         <input disabled value="5" id="Sleight-of-Hand" placeholder="+0" type="text" />  
+                                           <input disabled value="" class="proficient" id="Sleight-of-Hand" type="checkbox" />
+                                    </li>
+                                    <li>
+                                       <label for="Stealth">Stealth <span class="skill">(Dex)</span></label> 
+                                         <input disabled value="7"  id="Stealth" placeholder="+0" type="text" />  
+                                           <input disabled value="" checked class="proficient" id="Stealth" type="checkbox" />
+                                    </li>
+                                    <li>
+                                       <label for="Survival">Survival <span class="skill">(Wis)</span></label> 
+                                         <input disabled value="5"  id="Survival" placeholder="+0" type="text" /> 
+                                           <input disabled value="" checked class="proficient" id="Survival" type="checkbox" />
+                                    </li>
+                                 </ul>
+                            </div>
+                          </div>
+                    </section>
+
+                    <!--Passive perception & Other Lang And Tool Proficiencies-->
+                     <div class="passive-perception box">
+
+                        <div class="label-container">
+                           <label for="passive-perception">Passive Wisdom (Perception)</label>
+                        </div>
+                        <input disabled value="17" id="passive-perception" placeholder="10" />
+                     </div>
+                     <div class="other-proficiencies-box">
+                        <label for="other-proficiencies">Other Proficiencies and Languages</label>
+                          <textarea disabled placeholder="Dulcimer player, Common(r/w), Elvish(r/w),Aathiral (r/w),light armor, simple weapons , crossbows, longswords, rapiers, shortswords, thieves cant, thieves tools, " id="other-proficiencies"></textarea>
+                     </div>
+                  </section>
+                  
+                  <!--Column 2 , AR, HP, D-saves, Attack-Wep Equipment-->
+
+                  <section class="column-2">
+                     <section class="combat">
+                        <div class="armor-class">
+                           <div>
+                              <label for="ac">Armor Class</label>
+                                <input disabled value="16" id="ac" placeholder="10" type="text" />
+                           </div>
+                        </div>
+                        <div class="initiative">
+                           <div>
+                              <label for="initiative">Initiative</label>
+                                <input disabled value="5" id="initiative" placeholder="+0" type="text" />
+                           </div>
+                        </div>
+                        <div class="speed">
+                           <div>
+                              <label for="speed">Speed</label>
+                                <input disabled value="ft30" id="speed" placeholder="30" type="text" />
+                           </div>
+                        </div>
+                        <div class="hp">
+                           <div class="regular">
+                              <div class="max">
+                                 <label for="max-hp">Hit Point Maximum</label>
+                                  <input disabled value="30" id="max-hp" placeholder="10" type="text" />
+                              </div>
+                              <div class="current">
+                                 <label for="current-hp">Current Hit Points</label>
+                                  <input disabled value="" id="current-hp" type="text" />
+                              </div>
+                           </div>
+                           <div class="temporary">
+                              <label for="temp-hp">Temporary Hit Points</label>
+                                <input disabled value="0" id="temp-hp" type="text" />
+                           </div>
+                        </div>
+                        <div class="hit-dice">
+                           <div>
+                              <div class="total">
+                                 <label for="total-hd">Total</label>
+                                  <input disabled value="4D8" id="total-hd" placeholder="2d10" type="text" />
+                              </div>
+                              <div class="remaining">
+                                 <label for="remaining-hd">Hit Dice</label>
+                                  <input disabled value="30" id="remaining-hd" type="text" />
+                              </div>
+                           </div>
+                        </div>
+                        <!--DEATH SAVES! r.i.p. kivik :c -->
+                        <div class="death-saves">
+                           <div>
+                                 <h6>Death Saves</h6>
+                              <div class="marks">
+                                 <div class="death-successes">
+                                    <label for="death-success">Successes</label>
+                                    <div class="d-saves-fill">
+                                       <input disabled value="" id="death-success" type="checkbox" />
+                                       <input disabled value="" id="death-success" type="checkbox" />
+                                       <input disabled value="" id="death-success" type="checkbox" />
+                                    </div>
+                                 </div>
+                                 <div class="death-fails">
+                                    <label for="death-fail">Failures</label>
+                                    <div class="d-saves-fill">
+                                       <input disabled value="" id="death-fail" type="checkbox" />
+                                       <input disabled value="" id="death-fail" type="checkbox" />
+                                       <input disabled value="" id="death-fail" type="checkbox" />
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </section>
+                     <!--weapons and spell tools.... like a nice stick-->
+                     <section class="attacks-and-spell-casting">
+                        <div class="atk-and-spc-wrap">
+                           <h6>Attacks & Spellcasting</h6>
+                           <div class="wep-and-dam">
+                              <div class="wt">
+                                    <div class="wt-header">
+                                       <label class="table-items" for="weapon-name">Name</label>
+                                    </div>
+                                    <div class="wt-header">
+                                       <label class="table-items" for="attack-bonus">Atk Bonus</label>
+                                    </div>
+                                    <div class="wt-header">
+                                       <label class="table-items" for="damage-type">Damage/Type</label>
+                                    </div> 
+                              </div>
+                              <div class="wt-content">
+                                 <div class="row"> 
+                                       <div class="cell">
+                                         <input disabled value="rapier" class="table-items" id="weapon-name" type="text" />
+                                      </div>
+                                       <div class="cell">
+                                         <input disabled value="+5 1D6" class="table-items" id="attack-bonus" type="text" />
+                                      </div>
+                                       <div class="cell">
+                                         <input disabled value="fence 5ft" class="table-items" id="damage-type" type="text" />
+                                      </div>
+                                 </div>
+                                 <div class="row">
+                                       <div class="cell">
+                                         <input disabled value="shortbow" class="table-items" id="weapon-name" type="text" />
+                                      </div>
+                                       <div class="cell">
+                                         <input disabled value="+5 1D6" class="table-items" id="attack-bonus" type="text" />
+                                      </div>
+                                       <div class="cell">
+                                         <input disabled value="Range 80/360ft" class="table-items" id="damage-type" type="text" />
+                                      </div>
+                                 </div>
+                                 <div class="row">
+                                       <div class="cell">
+                                         <input disabled value="dagger" class="table-items" id="weapon-name" type="text" />
+                                      </div>
+                                       <div class="cell">
+                                         <input disabled value="+5 1d4" class="table-items" id="attack-bonus" type="text" />
+                                      </div>
+                                       <div class="cell">
+                                         <input disabled value="short/ thrown 20/60ft" class="table-items" id="damage-type" type="text" />
+                                      </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <label for="attacks-spell-notes">attacks and Spellcasting notes </label>
+                           <textarea id="attacks-spell-notes"></textarea>
+                        </div>
+                     </section>
+
+                     <!--Equipment and gold-->
+
+                     <section class="equipment">
+                        <div class="money-wrap">
+                           <h6>Equipment</h6>
+                           <div class="money">
+                              <ul>
+                                 <li>
+                                    <label for="cp">cp</label>
+                                      <input disabled value="50" id="cp" />
+                                 </li>
+                                 <li>
+                                    <label for="sp">sp</label>
+                                      <input disabled value="0" id="sp" />
+                                 </li>
+                                 <li>
+                                    <label for="ep">ep</label>
+                                      <input disabled value="0" id="ep" />
+                                 </li>
+                                 <li>
+                                    <label for="gp">gp</label>
+                                      <input disabled value="1" id="gp" />
+                                 </li>
+                                 <li>
+                                    <label for="pp">pp</label>
+                                      <input disabled value="0" id="pp" />
+                                 </li>
+                              </ul>
+                           </div>
+                           <label for="equipment-list">Equipment notes </label>
+                           <textarea disabled id="equipment-list" placeholder="Equipment list here"></textarea>
+                        </div>
+                     </section>
+                  </section>
+                  <!--who...are you? (personality)-->
+                  <section class="column-3">
+                     <section class="flavor">
+                        <div class="personality">
+                           <label for="personality">Personality</label>
+                            <textarea disabled placeholder="I place no stock in wealth or well-mannered folk, money or manners wont save you from a hungers owl bear" id="personality"></textarea>
+                        </div>
+                        <div class="ideals">
+                           <label for="ideals">Ideals</label>
+                            <textarea disabled placeholder="life is changing and we must change with it " id="ideals"></textarea>
+                        </div>
+                        <div class="bonds">
+                           <label for="bonds">Bonds</label>
+                            <textarea disabled placeholder="learn about everything and everyone" id="bonds"></textarea>
+                        </div>
+                        <div class="flaws">
+                           <label for="flaws">Flaws</label>
+                            <textarea disabled placeholder="There is no room for caution in a life lived to it's fullest" id="flaws"></textarea>
+                        </div>
+                     </section>
+                     <section class="features">
+                        <div>
+                           <label for="features">Features & Traits</label>
+                            <textarea disabled placeholder="Wonderer, Rude/Uncultured, Export Forgery, Mimicry, Sneak attack (1d6), Alert" id="features"></textarea>
+                        </div>
+                     </section>
+                  </section>
+               </div>
+            </form>
+         </div>
+         <!--footer-->
+        </main>
+          <footer>
+            <div>
+              <h5>contact info copyright notes </h5>
+            </div>
+          </footer>
+   </body>
+</html>
